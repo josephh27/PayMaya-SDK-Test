@@ -25,11 +25,11 @@ class Customization
 		$response = $this->apiManager->setCustomization($customizationInformation);
 		$responseArr = json_decode($response, true);
 
-		$this->logoUrl = $responseArr["logoUrl"];
-		$this->iconUrl = $responseArr["iconUrl"];
-		$this->appleTouchIconUrl = $responseArr["appleTouchIconUrl"];
-		$this->customTitle = $responseArr["customTitle"];
-		$this->colorScheme = $responseArr["colorScheme"];
+		$this->logoUrl = 'maya.png';
+		$this->iconUrl = 'favicon.ico';
+		$this->appleTouchIconUrl = 'favicon.ico';
+		$this->customTitle = 'PayMaya Payment Gateway';
+		$this->colorScheme = '#f3dc2a';
 
 		return $response;
 	}
@@ -39,11 +39,11 @@ class Customization
 		$response = $this->apiManager->getCustomization();
 		$responseArr = json_decode($response, true);
 
-		$this->logoUrl = $responseArr["logoUrl"];
-		$this->iconUrl = $responseArr["iconUrl"];
-		$this->appleTouchIconUrl = $responseArr["appleTouchIconUrl"];
-		$this->customTitle = $responseArr["customTitle"];
-		$this->colorScheme = $responseArr["colorScheme"];
+		$this->logoUrl = 'maya.png';
+		$this->iconUrl = 'favicon.ico';
+		$this->appleTouchIconUrl = 'favicon.ico';
+		$this->customTitle = 'PayMaya Payment Gateway';
+		$this->colorScheme = '#f3dc2a';
 		
 		return $response;
 	}

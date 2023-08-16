@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    background: #202122;
+    width: 100%;
+}
+
+.main-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px auto;
+}
+
+.products-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 100px auto 0px auto;
+    background: #F7FBF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    background: #74EEA5;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.product > img {
+    width: 100%;
+    height: 200px;
+}
+
+.product-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-desc > div {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.buy-btn {
+    background: green;
+}
+
+.remove-btn {
+    background: red;
+}
+
+.main-btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.checkout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #74EEA5;
+    color: #102432;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #74EEA5;
+    color: #102432;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

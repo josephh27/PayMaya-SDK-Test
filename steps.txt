@@ -1,0 +1,2 @@
+- Extracted the lib and sample folder from the PayMaya SDK Github repository.
+- Inputted all the proper public and private key in all of sample PayMayaSDK instantiation.

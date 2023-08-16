@@ -8,8 +8,8 @@ use PayMaya\Model\Checkout\Item;
 use PayMaya\Model\Checkout\ItemAmount;
 use PayMaya\Model\Checkout\ItemAmountDetails;
 
-PayMayaSDK::getInstance()->initCheckout("pk-iaioBC2pbY6d3BVRSebsJxghSHeJDW4n6navI7tYdrN", 
-										"sk-uh4ZFfx9i0rZpKN6CxJ826nVgJ4saGGVAH9Hk7WrY6Q", 
+PayMayaSDK::getInstance()->initCheckout("pk-yaj6GVzYkce52R193RIWpuRR5tTZKqzBWsUeCkP9EAf", 
+										"sk-VGDKY3P90NYZZ0kSWqBFaD1NTIXQCxtdS7SbQXvcA4g", 
 										"SANDBOX");
 
 // Item
@@ -37,9 +37,9 @@ $itemCheckout->items = array($item);
 $itemCheckout->totalAmount = $itemAmount;
 $itemCheckout->requestReferenceNumber = "123456789";
 $itemCheckout->redirectUrl = array(
-	"success" => "https://shop.com/success",
-	"failure" => "https://shop.com/failure",
-	"cancel" => "https://shop.com/cancel"
+	"success" => $base_url."Successful.php",
+	"failure" => $base_url."Failed.php",
+	"cancel" => $base_url."Cancel.php"
 	);
 $itemCheckout->execute();
 $itemCheckout->retrieve();
